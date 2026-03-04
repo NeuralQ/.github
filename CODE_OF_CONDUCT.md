@@ -1,4 +1,4 @@
-# Professional Code of Conduct
+# Code of Conduct
 
 NeuralQ is committed to maintaining a highly professional, secure, and collaborative environment for all employees, contractors, and partners interacting with our codebase and infrastructure.
 
