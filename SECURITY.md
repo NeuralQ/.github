@@ -20,7 +20,7 @@ If you believe you have discovered a potential security vulnerability in any Neu
 
 Given the proprietary nature of our technology, we require all vulnerability reports to be kept strictly confidential.
 
-1. **Email your report** to [security@neuralq.ai](mailto:security@neuralq.ai). (If this alias is not yet active, please use [hello@neuralq.ai](mailto:hello@neuralq.ai) with "SECURITY" in the subject line).
+1. **Email your report** to [security@neuralq.ai](mailto:security@neuralq.ai).
 2. **Include detailed information**, such as:
    * A description of the vulnerability.
    * Steps to reproduce the issue.
