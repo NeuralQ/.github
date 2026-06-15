@@ -14,4 +14,4 @@ NeuralQ is a deep-tech consulting firm dedicated to transforming complex data in
 
 * **Website:** [neuralq.ai](https://neuralq.ai)
 * **Email:** [hello@neuralq.ai](mailto:hello@neuralq.ai)
-* **LinkedIn:** [NeuralQ](https://www.linkedin.com/company/neuralq)
+* **LinkedIn:** [NeuralQ on LinkedIn](https://www.linkedin.com/search/results/companies/?keywords=NeuralQ)
