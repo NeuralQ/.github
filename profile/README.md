@@ -22,4 +22,5 @@ Geospatial strategy and feasibility consulting, satellite and aerial data proces
 ## Connect With Us
 
 * **Website:** [neuralq.github.io](https://neuralq.github.io)
+* **LinkedIn:** [NeuralQ on LinkedIn](https://www.linkedin.com/company/neuralqltd)
 * **Email:** [hello@neuralq.ai](mailto:hello@neuralq.ai)
