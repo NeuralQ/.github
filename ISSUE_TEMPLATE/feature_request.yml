@@ -1,0 +1,41 @@
+name: Feature or change request
+description: Propose a new capability or a change to an existing one.
+title: "[feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What is hard, missing, or expensive today? Who is affected?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: What should exist instead, and how it would be used.
+    validations:
+      required: true
+  - type: dropdown
+    id: maturity
+    attributes:
+      label: Evidence behind this request
+      options:
+        - Customer or user evidence
+        - Internal engineering evidence
+        - Research finding
+        - Idea, not yet validated
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope checks
+      options:
+        - label: I have searched existing issues and this is not a duplicate
+        - label: This does not contain secrets, credentials, or client data

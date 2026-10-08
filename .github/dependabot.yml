@@ -1,0 +1,55 @@
+# Organization-level Dependabot configuration.
+#
+# This file lives in the `.github` repository and applies to every NeuralQ
+# repository that does not carry its own `.github/dependabot.yml`.
+# Handbook reference: engineering/ci-cd.md (dependency vulnerability scanning on
+# every PR; Critical/High findings block the merge).
+
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    labels: ["dependencies", "chore"]
+    commit-message:
+      prefix: chore
+      include: scope
+
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    labels: ["dependencies", "chore"]
+    commit-message:
+      prefix: chore
+      include: scope
+    ignore:
+      # Major upgrades are reviewed manually per the technology radar.
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    labels: ["dependencies", "chore"]
+    commit-message:
+      prefix: chore
+      include: scope
+
+  - package-ecosystem: docker
+    directory: "/"
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 3
+    labels: ["dependencies", "chore"]
+    commit-message:
+      prefix: chore
+      include: scope

@@ -1,0 +1,39 @@
+name: Bug report
+description: Report a defect in a NeuralQ repository.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do **not** report security vulnerabilities here. Report them privately to
+        [security@neuralq.ai](mailto:security@neuralq.ai) — see
+        [SECURITY.md](https://github.com/NeuralQ/.github/blob/main/SECURITY.md).
+  - type: input
+    id: repository
+    attributes:
+      label: Repository
+      description: Which repository is affected?
+      placeholder: neuralq-s2sr-core
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Observed behavior, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Exact commands, environment, and inputs.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, screenshots, or failing test
+      description: Sanitize secrets before pasting.
